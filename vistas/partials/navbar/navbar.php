@@ -102,15 +102,22 @@ if ($navEsSuper) {
     .navbar-brand {
         display: flex;
         align-items: center;
-        gap: 10px;
+        gap: 12px;
         text-decoration: none;
     }
 
     .navbar-logo {
-        width: 36px;
-        height: 36px;
+        height: 38px;
+        width: auto;
+        max-width: 90px;
         object-fit: contain;
-        border-radius: 8px;
+        display: block;
+        filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.4));
+        transition: transform 0.2s ease;
+    }
+
+    .navbar-brand:hover .navbar-logo {
+        transform: scale(1.05);
     }
 
     .navbar-brand-text {
@@ -322,3 +329,6 @@ if ($navEsSuper) {
         </a>
     </div>
 </header>
+
+<!-- Fondo animado Low-Poly (se inyecta automáticamente en todas las vistas con navbar) -->
+<?php require_once __DIR__ . '/../background/animatedBackground.php'; ?>

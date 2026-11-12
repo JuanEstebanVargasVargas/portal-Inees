@@ -7,7 +7,7 @@ $tituloPagina = "Contratos y Formato de Hoja de Vida — Portal INEES";
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="../../img/logo.png">
+    <link rel="icon" type="image/png" href="/inees_Portal/img/logo.png">`r`n    <link rel="shortcut icon" href="/inees_Portal/img/logo.png">
     <title><?= htmlspecialchars($tituloPagina) ?></title>
     <style>
         :root {

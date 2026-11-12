@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="img/logo.png">
+    <link rel="icon" type="image/png" href="/inees_Portal/img/logo.png">
+    <link rel="shortcut icon" href="/inees_Portal/img/logo.png">
     <title>Panel de Control - Portal INEES</title>
     <style>
         :root {

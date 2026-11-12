@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="../../img/logo.png">
+    <link rel="icon" type="image/png" href="/inees_Portal/img/logo.png">`r`n    <link rel="shortcut icon" href="/inees_Portal/img/logo.png">
     <title>Solicitud de Ingreso — Portal INEES</title>
     <style>
         :root {
@@ -671,7 +671,7 @@ require_once __DIR__ . '/../partials/sidebar/sidebar.php';
                 <div class="form-group col-4">
                     <label class="form-label">Correo Electrónico Personal <span class="req">*</span></label>
                     <input type="email" name="email_candidato" class="form-control" placeholder="candidato@gmail.com" required>
-                    <span style="font-size:11px; color:#0f766e; font-weight:600;">✉️ A esta dirección se enviará el correo de bienvenida.</span>
+                    <span style="font-size:11px; color:#0f766e; font-weight:600;">A esta dirección se enviará el correo de bienvenida.</span>
                 </div>
 
                 <div class="form-group col-8">
@@ -715,7 +715,7 @@ require_once __DIR__ . '/../partials/sidebar/sidebar.php';
                         <option value="Sede Principal (Bogotá)">Sede Principal (Bogotá)</option>
                         <option value="Medellín">Medellín</option>
                         <option value="Trabajo Remoto">Trabajo Remoto</option>
-                        <option value="En Sitio Cliente">En Sitio Cliente</option>
+                        <option value="En Sitio Cliente">Motorizado</option>
                     </select>
                 </div>
 
@@ -810,19 +810,19 @@ require_once __DIR__ . '/../partials/sidebar/sidebar.php';
                     <div style="display:flex; gap:20px; flex-wrap:wrap; background:#f8fafc; padding:12px 18px; border-radius:var(--radius-sm); border:1px solid var(--border-light);">
                         <label class="checklist-item">
                             <input type="checkbox" name="areas_notificar[]" value="gestion_humana" checked>
-                            <span>Gestión Humana (Camila / Talento Humano)</span>
+                            <span>Gestión Humana (talento@inees.co)</span>
                         </label>
                         <label class="checklist-item">
                             <input type="checkbox" name="areas_notificar[]" value="sistemas_ti" checked>
-                            <span>Sistemas y TI (Equipos y Cuentas)</span>
+                            <span>Sistemas y TI (Desarrollo2@inees.co, desarrollo1@inees.co)</span>
                         </label>
                         <label class="checklist-item">
                             <input type="checkbox" name="areas_notificar[]" value="contabilidad" checked>
-                            <span>Contabilidad y Nómina</span>
+                            <span>Contabilidad y Nómina (contador@inees.co)</span>
                         </label>
                         <label class="checklist-item">
                             <input type="checkbox" name="areas_notificar[]" value="operaciones" checked>
-                            <span>Operaciones y Logística</span>
+                            <span>Operaciones y Logística (operaciones@inees.co, auxadministrativo@inees.co)</span>
                         </label>
                     </div>
                 </div>

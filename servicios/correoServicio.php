@@ -3,7 +3,7 @@
 
 class CorreoServicio {
 
-    private static $remitenteEmail = "talento.humano@inees.co";
+    private static $remitenteEmail = "talento@inees.co";
     private static $remitenteNombre = "INEES Talento Humano";
 
     /**

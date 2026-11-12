@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="../../img/logo.png">
+    <link rel="icon" type="image/png" href="/inees_Portal/img/logo.png">`r`n    <link rel="shortcut icon" href="/inees_Portal/img/logo.png">
     <title>Directorio de Empleados — Portal INEES</title>
     <style>
         :root {
@@ -1488,6 +1488,10 @@ function cambiarEstado(id, nuevoEstado) {
     })
     .catch(() => toast('Error de red al cambiar estado.', false));
 }
+    // Auto-abrir modal si viene ?crear=1 en la URL
+    <?php if ($esSuperUsuario && isset($_GET['crear'])): ?>
+    abrirModalCrear();
+    <?php endif; ?>
 </script>
 
 </body>

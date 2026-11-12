@@ -15,7 +15,7 @@ if (preg_match('#^(/[^/]+)#', $scriptName, $matches) && strpos($matches[1], '.ph
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="<?= $urlBase ?>img/logo.png">
+    <link rel="icon" type="image/png" href="/inees_Portal/img/logo.png">`r`n    <link rel="shortcut icon" href="/inees_Portal/img/logo.png">img/logo.png">
     <title>Flujos de Procesos — Portal INEES</title>
     <style>
         :root {

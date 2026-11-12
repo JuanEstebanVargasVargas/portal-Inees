@@ -87,17 +87,21 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         } else {
             // Mapeo de correos electrónicos de áreas corporativas INEES
             $mapaCorreosAreas = [
-                'gestion_humana' => 'talento.humano@inees.co',
-                'sistemas_ti'    => 'sistemas@inees.co',
-                'contabilidad'   => 'contabilidad@inees.co',
-                'operaciones'    => 'operaciones@inees.co',
-                'calidad'        => 'calidad@inees.co'
+                'gestion_humana' => ['talento@inees.co'],
+                'sistemas_ti'    => ['Desarrollo2@inees.co', 'desarrollo1@inees.co'],
+                'contabilidad'   => ['contador@inees.co'],
+                'operaciones'    => ['operaciones@inees.co', 'auxadministrativo@inees.co'],
+                'calidad'        => ['calidad@inees.co']
             ];
 
             $destinatariosAreas = [];
             foreach ($areasSeleccionadas as $k) {
                 if (isset($mapaCorreosAreas[$k])) {
-                    $destinatariosAreas[] = $mapaCorreosAreas[$k];
+                    foreach ($mapaCorreosAreas[$k] as $emailArea) {
+                        if (!in_array($emailArea, $destinatariosAreas)) {
+                            $destinatariosAreas[] = $emailArea;
+                        }
+                    }
                 }
             }
 
